@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <title>Document</title>
+
+    <!-- <script>
+        function changedisp(valu){
+            console.log(valu);
+            document.getElementById("display").innerHTML="value";
+           
+        }
+    </script> -->
+
+
+    
+</head>
+<body>
+
+    <!-- remove the display fromm table -->
+    
+    <table class="scientific-calculator" cellspacing="0" cellpadding="1">
+
+        <thead>
+            <tr>
+               
+                <td colspan="5"><div id="display">
+                    <div>
+                    <div data-htmlprevans id="htmlprevans"></div>
+                    <div data-htmlcurrans id="htmlcurrans"></div>
+                </div>
+                </td>
+               
+            </tr>
+        </thead>
+
+        <tbody class="selection">
+            <tr>
+                <td><button type="button" class="bolder" data-mode>DEG</button></td>
+                <td><button type="button" class="bolder" data-mode>F-E</button></td>
+            </tr>
+
+
+            <tr>
+                <td><button type="button" class="l-opacity" data-operator>MC</button></td>
+                <td><button type="button" class="l-opacity" data-operator>MR</button></td>
+                <td><button type="button" class="bolder" data-operator>M+</button></td>
+                <td><button type="button"  class="bolder" data-operator>M-</button></td>
+                <td><button type="button" class="bolder" data-operator>MS</button></td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2"><button type ="button" data-mode>trigonometry</button></td>
+                <td colspan="2"><button type ="button" data-mode>function</button></td>
+            </tr>
+
+           
+            <tr>
+                <td><button type="button" data-operator>2nd</button></td>
+                <td><button type="button" data-operator="">pi</button></td>
+                <td><button type="button" data-operator>e</button></td>
+                <td><button type="button" data-clear>c</button></td>
+                <td><button type="button" data-operator data-delete>#</button></td>
+            </tr>
+                 
+            <tr>
+                <td><button type="button" data-operator>x2</button></td>
+                <td><button type="button" data-operator>1/x</button></td>
+                <td><button type="button" data-operator>|x|</button></td>
+                <td><button type="button" data-operator>exp</button></td>
+                <td><button type="button" data-operator>mod</button></td>
+            </tr>
+
+             
+            <tr>
+                <td><button type="button" data-operator>sqrt</button></td>
+                <td><button type="button" data-operator>(</button></td>
+                <td><button type="button" data-operator>)</button></td>
+                <td><button type="button" data-operator>n!</button></td>
+                <td><button type="button" data-operator>/</button></td>
+            </tr>
+
+
+            <!-- <tr>
+                <td><button>xy</button></td>
+                <td><button>7</button></td>
+                <td><button>8</button></td>
+                    <td><button>9</button></td>
+                <td><button>*</button></td>
+            </tr>
+
+              -->
+            <tr>
+                <td><button type="button" data-operator>xy</button></td>
+                <td><button type="button" class="number" data-number="7">7</button></td>
+                <td><button type="button" class="number" data-number="8">8</button></td>
+                <td><button type="button"  class="number" data-number="9">9</button></td>
+                <td><button type="button" data-operator>x</button></td>
+            </tr>
+
+
+            <!-- <tr>
+                <td><button>10x</button></td>
+                <td><button>4</button></td>
+                <td><button>5</button></td>
+                <td><button>6</button></td>
+                <td><button>-</button></td>
+            </tr> -->
+
+                 
+            <tr>
+                <td><button type="button" data-operator>10x</button></td>
+                <td><button type="button" class="number" data-number>4</button></td>
+                <td><button type="button" class="number" data-number>5</button></td>
+                <td><button type="button"  class="number" data-number>6</button></td>
+                <td><button type="button">-</button></td>
+            </tr>
+
+
+<!-- 
+            <tr>
+                <td><button>log</button></td>
+                <td><button>1</button></td>
+                <td><button>2</button></td>
+                <td><button>3</button></td>
+                <td><button>+</button></td>
+            </tr> -->
+
+             
+            <tr>
+                <td><button type="button">log</button></td>
+                <td><button type="button" class="number" data-number>1</button></td>
+                <td><button type="button" class="number" data-number>2</button></td>
+                <td><button type="button"  class="number" data-number>3</button></td>
+                <td><button type="button" data-operator>+</button></td>
+            </tr>
+<!-- 
+
+             <tr>
+                <td><button>ln</button></td>
+                <td><button>+/-</button></td>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>=</button></td>
+            </tr> -->
+
+             
+            <tr>
+                <td><button type="button" data-operator>ln</button></td>
+                <td><button type="button" data-operator>+/-</button></td>
+                <td><button type="button" class="number" data-number>0</button></td>
+                <td><button type="button" data-operator>.</button></td>
+                <td><button type="button" data-equal>=</button></td>
+            </tr>
+
+
+         </tbody>
+
+    </table>
+
+    <script src="demo.js"></script>
+    
+</body>
+</html>
